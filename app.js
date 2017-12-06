@@ -71,7 +71,9 @@ var counter = 1;
 var guess = 0;
 var flag;
 
+
 while (number !== 32) {
+
   number = parseInt(prompt('How many countries do you think ive visited?'));
 
   if (number < 32) {
@@ -83,6 +85,13 @@ while (number !== 32) {
   } else if (number === NaN || number === null) {
     alert('please enter a number');
     counter++;
+  }
+  if (guess < 3) {
+    guess++;
+  } else if (guess === 3) {
+    flag = true;
+    guess++;
+    break;
   }
 }
 
