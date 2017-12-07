@@ -4,8 +4,22 @@ h1 {
   font-weight: bold;
   margin-right: 1300px;
   text-align: center;
+  border: 2px dotted black;
 }
 
 p {
+  color: #6600cc;
+}
+
+h2 {
+  font-weight: bold;
+  color: #6600cc;
+}
+
+ul {
+  color: #6600cc;
+}
+
+ol {
   color: #6600cc;
 }
