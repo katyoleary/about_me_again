@@ -160,8 +160,8 @@ while (answer !== 'austria' || answer !== 'hong kong' || answer !== 'australia' 
   if (!flag7) {
     alert('the countries ive lived in outside the states are: austria, hong kong, australia, and thailand.');
   }
-
-  alert('you got ' + numRight + ' questions right out of 7');
+  var name = prompt('what is your name?');
+  alert(name + ', you got ' + numRight + ' questions right out of 7');
 
   console.log('question 7 answer: ', answer);
   console.log('num guesses for question 7: ', numGuesses);
