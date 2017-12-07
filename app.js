@@ -20,61 +20,70 @@
     }
   }
   q1();
-//
-//   var quest2 = prompt('wayne\'s world is my favorite movie')
-//   var res2 = quest2.toLowerCase();
-//   console.log('question 2 answer: ', res2);
-//
-//   if (res2 === 'y' || res2 === 'yes') {
-//     alert('oh yah!!!!');
-//     numRight++;
-//   }
-//
-//   if (res2 === 'n' || res2 === 'no') {
-//     alert('false. its the best');
-//   }
-//
-//
-//   var quest3 = prompt('i like to sing in the shower');
-//   var res3 = quest3.toLowerCase();
-//   console.log('question 3 answer: ', res3);
-//
-//   if (res3 === 'y' || res3 === 'yes') {
-//     alert('hale yes i do!');
-//     numRight++;
-//   }
-//
-//   if (res3 === 'n' || res3 === 'no') {
-//     alert('WRONG. and i sound like beyonce');
-//   }
-//
-//   var quest4 = prompt('i once went bowling with bill murray');
-//   var res4 = quest4.toLowerCase();
-//   console.log('question 4 answer: ', res4);
-//
-//   if (res4 === 'y' || res4 === 'yes') {
-//     alert('owwwww you right, i did!!!!');
-//     numRight++;
-//   }
-//
-//   if (res4 === 'n' || res4 === 'no') {
-//     alert('i totally did. he\'s not very good at bowling and neither am i.')
-//   }
-//
-//
-//   var quest5 = prompt('my favorite color is black');
-//   var res5 = quest5.toLowerCase();
-//   console.log('question 5 answer: ', res5);
-//
-//   if (res5 === 'y' || res5 === 'yes') {
-//     alert('i know that\'s the only color i wear, but my fav color is red');
-//     numRight++;
-//   }
-//
-//   if (res5 === 'n' || res5 === 'no') {
-//     alert('true');
-//   }
-//
+
+  function q2(){
+    var quest2 = prompt('wayne\'s world is my favorite movie')
+    var res2 = quest2.toLowerCase();
+    console.log('question 2 answer: ', res2);
+
+    if (res2 === 'y' || res2 === 'yes') {
+      alert('oh yah!!!!');
+      numRight++;
+    }
+
+    if (res2 === 'n' || res2 === 'no') {
+      alert('false. its the best');
+    }
+  }
+  q2();
+
+  function q3() {
+    var quest3 = prompt('i like to sing in the shower');
+    var res3 = quest3.toLowerCase();
+    console.log('question 3 answer: ', res3);
+
+    if (res3 === 'y' || res3 === 'yes') {
+      alert('hale yes i do!');
+      numRight++;
+    }
+
+    if (res3 === 'n' || res3 === 'no') {
+      alert('WRONG. and i sound like beyonce');
+    }
+  }
+  q3();
+
+  function q4() {
+    var quest4 = prompt('i once went bowling with bill murray');
+    var res4 = quest4.toLowerCase();
+    console.log('question 4 answer: ', res4);
+
+    if (res4 === 'y' || res4 === 'yes') {
+      alert('owwwww you right, i did!!!!');
+      numRight++;
+    }
+
+    if (res4 === 'n' || res4 === 'no') {
+      alert('i totally did. he\'s not very good at bowling and neither am i.')
+    }
+  }
+  q4();
+
+  function q5() {
+    var quest5 = prompt('my favorite color is black');
+    var res5 = quest5.toLowerCase();
+    console.log('question 5 answer: ', res5);
+
+    if (res5 === 'y' || res5 === 'yes') {
+      alert('i know that\'s the only color i wear, but my fav color is red');
+      numRight++;
+    }
+
+    if (res5 === 'n' || res5 === 'no') {
+      alert('true');
+    }
+  }
+  q5();
 //   /* QUESTIONN 6 */
 //
 //
