@@ -1,7 +1,7 @@
 'use strict';
 
-
-  alert('following are some questions about me. if you think the question is true, answer y. if false, answer n');
+  var name = prompt('what is your name?');
+  alert('hey ' + name + '. following are some questions about me. if you think the question is true, answer y. if false, answer n');
 
   var numRight = 0;
 
@@ -84,6 +84,7 @@
     }
   }
   q5();
+
   /* QUESTIONN 6 */
 
   function q6() {
@@ -125,60 +126,38 @@
       console.log('guesses for question 6: ', guess);
   }
   q6();
+
   /* QUESTIONN 7*/
 
+function q7() {
+  var guessesRemaining = 6;
+  var answers = ['austria', 'hong kong', 'australia', 'thailand'];
 
-  function q7() {
-    var flag7;
-    var numGuesses = 0;
+  while(guessesRemaining > 0) {
+    var countryGuess = prompt('guess a country ive lived in outside of the states')
+    guessesRemaining--;
 
-    while (answer !== 'austria' || answer !== 'hong kong' || answer !== 'australia' || answer !== 'thailand') {
-      numGuesses++;
-
-
-      if (numGuesses < 6) {
-
-        if (flag7 === true) {
-          break;
-        }
-
-        var countries = ['austria', 'hong kong', 'australia', 'thailand'];
-        var answer = (prompt('what other countries do you think ive lived in besides the states?')).toLowerCase();
-
-        for (var i = 0; i < countries.length; i++) {
-          if (answer === countries[i]) {
-            console.log('each iteration: ', countries[i]);
-            flag7 = true;
-            alert('you guessed one of \'em!!');
-            numRight++;
-            break;
-          }
-        }
-
-
-
-      if (flag7 === true) {
-        alert('nice guess! all the countries ive lived in besides the states are: austria, hong kong, australia, and thailand.');
-      }
-
-      if (!flag7) {
-        alert('youre wrong');
-        }
+    for (var i = 0; i < answers.length; i++) {
+      if(countryGuess === answers[i]){
+        guessesRemaining = -1;
+        alert('you guessed one!');
+        numRight++;
+        break;
       }
     }
+    if(guessesRemaining > 0) {
+      alert('nah, you wrong. you have ' + guessesRemaining + ' guesses remaining');
+    }
 
-
-
-
-      if (!flag7) {
-        alert('the countries ive lived in outside the states are: austria, hong kong, australia, and thailand.');
-      }
+    if(guessesRemaining === 0) {
+      alert('youre out of guesses. ive lived in austria, hong kong, australia and thailand.')
+    }
   }
-  q7();
+}
 
-var name = prompt('what is your name?');
+q7();
+
 alert(name + ', you got ' + numRight + ' questions right out of 7');
 
 console.log('question 7 answer: ', answer);
-console.log('num guesses for question 7: ', numGuesses);
 console.log('number of questions answered correctly: ', numRight);
