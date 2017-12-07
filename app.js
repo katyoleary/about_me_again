@@ -12,11 +12,11 @@
 
     if (res1 === 'y' || res1 === 'yes') {
       alert('nah, that\'d be tight tho');
-      numRight++;
     }
 
     if (res1 === 'n' || res1 === 'no') {
       alert('correct');
+      numRight++;
     }
   }
   q1();
@@ -76,106 +76,109 @@
 
     if (res5 === 'y' || res5 === 'yes') {
       alert('i know that\'s the only color i wear, but my fav color is red');
-      numRight++;
     }
 
     if (res5 === 'n' || res5 === 'no') {
       alert('true');
+      numRight++;
     }
   }
   q5();
-//   /* QUESTIONN 6 */
-//
-//
-//   var number;
-//   var counter = 1;
-//   var guess = 0;
-//   var flag;
-//
-//
-//   while (number !== 32) {
-//
-//     number = parseInt(prompt('How many countries do you think ive visited?'));
-//
-//     if (number === 32) {
-//       alert('you guessed it!')
-//       numRight++;
-//     } else if (number < 32) {
-//       alert('too low!');
-//       counter++;
-//     } else if (number > 32) {
-//       alert('too high!');
-//       counter++;
-//     } else if (number === NaN || number === null) {
-//       alert('please enter a number');
-//       counter++;
-//     }
-//     if (guess < 3) {
-//       guess++;
-//       counter++;
-//     } else if (guess === 3) {
-//       flag = true;
-//       guess++;
-//       break;
-//     }
-//   }
-//
-//     console.log('question 6 answer: ', number);
-//     console.log('counter: ', counter);
-//     console.log('guesses for question 6: ', guess);
-//
-//   /* QUESTIONN 7*/
-//
-//
-//
-//   var flag7;
-//   var numGuesses = 0;
-//
-//   while (answer !== 'austria' || answer !== 'hong kong' || answer !== 'australia' || answer !== 'thailand') {
-//     numGuesses++;
-//
-//
-//     if (numGuesses < 6) {
-//
-//       if (flag7 === true) {
-//         break;
-//       }
-//
-//       var countries = ['austria', 'hong kong', 'australia', 'thailand'];
-//       var answer = (prompt('what other countries do you think ive lived in besides the states?')).toLowerCase();
-//
-//       for (var i = 0; i < countries.length; i++) {
-//         if (answer === countries[i]) {
-//           console.log('each iteration: ', countries[i]);
-//           flag7 = true;
-//           alert('you guessed one of \'em!!');
-//           numRight++;
-//           break;
-//         }
-//       }
-//
-//
-//
-//     if (flag7 === true) {
-//       alert('nice guess! all the countries ive lived in besides the states are: austria, hong kong, australia, and thailand.');
-//     }
-//
-//     if (!flag7) {
-//       alert('youre wrong');
-//       }
-//     }
-//   }
-//
-//
-//
-//
-//     if (!flag7) {
-//       alert('the countries ive lived in outside the states are: austria, hong kong, australia, and thailand.');
-//     }
-//     var name = prompt('what is your name?');
-//     alert(name + ', you got ' + numRight + ' questions right out of 7');
-//
-//     console.log('question 7 answer: ', answer);
-//     console.log('num guesses for question 7: ', numGuesses);
-//     console.log('number of questions answered correctly: ', numRight);
-// }
+  /* QUESTIONN 6 */
+
+  function q6() {
+    var number;
+    var counter = 1;
+    var guess = 0;
+    var flag;
+
+
+    while (number !== 32) {
+
+      number = parseInt(prompt('How many countries do you think ive visited?'));
+
+      if (number === 32) {
+        alert('you guessed it!')
+        numRight++;
+      } else if (number < 32) {
+        alert('too low!');
+        counter++;
+      } else if (number > 32) {
+        alert('too high!');
+        counter++;
+      } else if (number === NaN || number === null) {
+        alert('please enter a number');
+        counter++;
+      }
+      if (guess < 3) {
+        guess++;
+        counter++;
+      } else if (guess === 3) {
+        flag = true;
+        guess++;
+        break;
+      }
+    }
+
+      console.log('question 6 answer: ', number);
+      console.log('counter: ', counter);
+      console.log('guesses for question 6: ', guess);
+  }
+  q6();
+  /* QUESTIONN 7*/
+
+
+  function q7() {
+    var flag7;
+    var numGuesses = 0;
+
+    while (answer !== 'austria' || answer !== 'hong kong' || answer !== 'australia' || answer !== 'thailand') {
+      numGuesses++;
+
+
+      if (numGuesses < 6) {
+
+        if (flag7 === true) {
+          break;
+        }
+
+        var countries = ['austria', 'hong kong', 'australia', 'thailand'];
+        var answer = (prompt('what other countries do you think ive lived in besides the states?')).toLowerCase();
+
+        for (var i = 0; i < countries.length; i++) {
+          if (answer === countries[i]) {
+            console.log('each iteration: ', countries[i]);
+            flag7 = true;
+            alert('you guessed one of \'em!!');
+            numRight++;
+            break;
+          }
+        }
+
+
+
+      if (flag7 === true) {
+        alert('nice guess! all the countries ive lived in besides the states are: austria, hong kong, australia, and thailand.');
+      }
+
+      if (!flag7) {
+        alert('youre wrong');
+        }
+      }
+    }
+
+
+
+
+      if (!flag7) {
+        alert('the countries ive lived in outside the states are: austria, hong kong, australia, and thailand.');
+      }
+  }
+  q7();
+
+var name = prompt('what is your name?');
+alert(name + ', you got ' + numRight + ' questions right out of 7');
+
+console.log('question 7 answer: ', answer);
+console.log('num guesses for question 7: ', numGuesses);
+console.log('number of questions answered correctly: ', numRight);
