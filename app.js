@@ -161,3 +161,5 @@ alert(name + ', you got ' + numRight + ' questions right out of 7');
 
 console.log('question 7 answer: ', answer);
 console.log('number of questions answered correctly: ', numRight);
+
+//yaya its working!!!
